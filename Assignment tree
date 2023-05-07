@@ -1,3 +1,4 @@
+
 #1 Implement Binary tree
 class Node:
     def __init__(self, data):
@@ -58,7 +59,9 @@ tree.insert(2)
 tree.insert(1)
 
 tree.print_tree() 
-6 1 2 4 2 1 
+
+
+
 #2 Find height of a given tree
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -82,52 +85,7 @@ root.left.left = TreeNode(2)
 root.left.right = TreeNode(1)
 
 print(height(root))
-3
-#3 Perform Pre-order, Post-order, In-order traversal
 
-class Node:
-    def __init__(self, data):
-        self.left = None
-        self.right = None
-        self.data = data
-
-def preorder_traversal(node):
-    if node is not None:
-        print(node.data, end=' ')
-        preorder_traversal(node.left)
-        preorder_traversal(node.right)
-
-def inorder_traversal(node):
-    if node is not None:
-        inorder_traversal(node.left)
-        print(node.data, end=' ')
-        inorder_traversal(node.right)
-
-def postorder_traversal(node):
-    if node is not None:
-        postorder_traversal(node.left)
-        postorder_traversal(node.right)
-        print(node.data, end=' ')
-root = Node(6)
-root.left = Node(5)
-root.right = Node(2)
-root.left.left = Node(4)
-root.left.right = Node(19)
-
-print("Pre-order traversal:")
-preorder_traversal(root) 
-
-print("\nIn-order traversal:")
-inorder_traversal(root) 
-
-print("\nPost-order traversal:")
-postorder_traversal(root)
-Pre-order traversal:
-6 5 4 19 2 
-In-order traversal:
-4 5 19 6 2 
-Post-order traversal:
-4 19 5 2 6 
 #4 Function to print all the leaves in a given binary tree
 class Node:
     def __init__(self, data):
@@ -151,10 +109,7 @@ root.right.left = Node(5)
 root.right.right = Node(1)
 
 print_leaves(root)  
-6
-3
-5
-1
+
 #5 Implement BFS (Breath First Search) and DFS (Depth First Search)
 from collections import deque
 
@@ -201,7 +156,8 @@ graph = {
 }
 
 bfs(graph, 'A')  # output: A B C D E F
-A B C D E F A B C D E F 
+
+
 #6 Find sum of all left leaves in a given Binary Tree
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -230,7 +186,9 @@ root.right.left = TreeNode(15)
 root.right.right = TreeNode(7)
 
 print(sum_of_left_leaves(root))
-24
+
+
+
 #7 Find sum of all nodes of the given perfect binary tree
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -279,7 +237,8 @@ root.right.left = TreeNode(6)
 root.right.right = TreeNode(7)
 
 print(node_sum(root))
-28
+
+
 #8 Count subtress that sum up to a given value x in a binary tree
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -318,7 +277,7 @@ root.right.left = TreeNode(-4)
 root.right.right = TreeNode(7)
 
 print(count_subtrees_with_sum_x(root, 7))
-2
+
 #9 Find maximum level sum in Binary Tree
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -356,7 +315,7 @@ root.left.right = TreeNode(5)
 root.right.right = TreeNode(6)
 
 print(max_level_sum(root))
-15
+
 #10 Print the nodes at odd levels of a tree
 
 class TreeNode:
@@ -388,8 +347,6 @@ root.right.left = TreeNode(6)
 root.right.right = TreeNode(7)
 
 print_odd_level_nodes(root)
-1
-4
-5
-6
-7
+
+
+
